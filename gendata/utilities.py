@@ -80,4 +80,4 @@ def log_helper(curent_obj, current_row, total_row, number_log):
         last_time = time.time() 
         estimated = "None"
     percent  = round(current_row*100.0/total_row, 1)
-    print(f"Writing {curent_obj}... {percent}% {current_row}/{total_row} Estimated: {estimated}")
+    print(f"Writing {curent_obj}... {percent}% {current_row}/{total_row} Estimate: {estimated}")
