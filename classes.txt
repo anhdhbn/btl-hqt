@@ -1,0 +1,195 @@
+PES1017|Bóng chuyền hơi
+MAT1042|Giải tích 2
+EMA2007|Cơ học vật rắn biến dạng
+EPN2029|Khoa học vật liệu đại cương
+ELT3060|Kỹ thuật cao tần
+INT3121|Các chuyên đề trong Khoa học Máy tính
+EMA3005|Công nghệ chế tạo máy
+EPN3055|Công nghệ chế tạo pin mặt trời
+EMA3096|Công trình biển ngoài khơi, độ tin cậy và đồ án
+ELT3057|Truyền thông số và mã hóa
+INT3216|Phân tích, đánh giá hiệu năng hệ thống máy tính
+EPN2051|Seminar và thảo luận nhóm về công nghệ nano và ứng dụng
+EMA3094|Thủy động lực học - môi trường biển
+EPN3024|Thiết bị quang tử
+MAT1101|Xác suất thống kê
+CTE2012|Kinh tế xây dựng
+CTE2005|Sức bền vật liệu và Kết cấu
+INT3403|Đồ họa máy tính
+INE1050|Kinh tế vi mô
+MAT1100|Tối ưu hóa
+INT3011|Các vấn đề hiện đại của Khoa học Máy tính
+PES1015|Bóng chuyền 1
+EMA3118|Lý thuyết tấm và vỏ
+INT3508|Thực tập chuyên ngành
+INT3507|Các vấn đề hiện đại của Công nghệ thông tin
+FLF2102|Tiếng Anh cơ sở 2
+ELT3043|Truyền thông
+EPN3020|Quang tử nanô
+EMA3065|Điện tử công suất
+EMA3042|Thiết kế khuôn mẫu
+INT3303|Mạng không dây
+ELT2028|Chuyên nghiệp trong công nghệ
+INT3407|Tin sinh học
+EMA2035|Kỹ thuật mô hình-mô phỏng
+EMA2008|Cơ học chất lỏng
+EMA3120|Động lực học trong công trình
+EMA3109|Nhập môn khí động học thiết bị bay
+ELT3168|Quản trị mạng viễn thông
+EMA2023|Kỹ thuật số
+INT3310|Quản trị mạng
+ELT3102|Thực tập điện tử tương tự
+PHY1103|Điện và Quang
+INT3405|Học máy
+EMA3121|Lý thuyết dẻo
+AER3001|Kết cấu Hàng không
+CTE2014|Cơ sở Kiến trúc
+EET2004|Nguyên lý biến đổi năng lượng
+INT2203|Cấu trúc dữ liệu và giải thuật
+AER1001|Giới thiệu về Hàng không Vũ trụ
+ELT2041|Điện tử số
+EPN1096|Vật lý đại cương 2
+EMA3105|Đồ án thủy động lực học-môi trường biển
+INT3513|Phân tích và thiết kế thuật toán - Ứng dụng trong di động
+EPN3017|Quang phổ chất rắn
+ELT3067|Truyền thông quang
+EMA2021|Linh kiện bán dẫn và vi mạch
+EMA3106|Nhập môn công nghệ vũ trụ
+INT1008|Nhập môn lập trình
+EMA2028|Nhập môn công nghệ vi cơ điện tử
+EPN1095|Vật lý đại cương 1
+EPN3053|Kỹ thuật bảo vệ vật liệu và ứng dụng
+INT3301|Thực hành hệ điều hành mạng
+INT3110|Phân tích và thiết kế hướng đối tượng
+EPN3038|Vật liệu quang tử hữu cơ nanô
+INT3305|Truyền thông đa phương tiện
+EET2008|Thực hành công nghiệp kỹ thuật năng lượng
+EET2000|Các nguyên lý cơ bản trong hóa học
+PHY1100|Cơ - Nhiệt
+EET2013|Năng lượng tái tạo
+EMA3093|Máy - thiết bị thủy khí và đồ án
+ELT3047|Kiến trúc máy tính
+EPN3039|Vật lý và công nghệ laser
+EMA3107|Thí nghiệm đo đạc môi trường biển
+ELT3073|Thiết kế và mô phỏng hệ thống điều khiển
+EPN3016|Quang phi tuyến
+INT3132|Dự án công nghệ
+INT3220|Các vấn đề hiện đại của Hệ thống thông tin
+ELT2035|Tín hiệu và hệ thống
+EPN2027|Tin học vật lý
+AGT2000|Nhập môn Công nghệ Nông nghiệp
+ELT2030|Kỹ thuật điện
+ELT3111|Hệ thống logic mờ
+INT3304|Lập trình mạng
+MAT1093|Đại số
+ELT3163|Mạng truyền thông di động
+INT2204|Lập trình hướng đối tượng
+CTE3003|Kết cấu bê tông
+EMA3084|Vi xử lý và vi điều khiển
+INT3212|Xử lý dữ liệu thống kê
+ELT3048|Hệ thống vi xử lý
+ELT3103|Thực tập điện tử số
+EMA2012|Sức bền vật liệu và cơ học kết cấu
+ELT2201|Nguyên lý Kỹ thuật điện tử
+EET2011|Cơ sở quản lý năng lượng
+EMA2036|Cơ học kỹ thuật 1
+CTE2010|Cơ học đất
+EPN3009|Các vật liệu polymer chức năng cấu trúc nanô
+EET2002|Hóa học nhiên liệu
+EMA3083|Hệ thống cơ điện tử
+ELT3189|Kỹ thuật Anten
+EMA3119|Các phương pháp số trong cơ học vật liệu và kết cấu
+EET2007|Thực hành kỹ thuật năng lượng
+INT3506|Các hệ thống thương mại điện tử
+EMA2032|Hình họa kỹ thuật và CAD
+ELT1005|Nhập môn kỹ thuật điện tử
+INT3213|Nhập môn an toàn thông tin
+BSA2002|Nguyên lý marketing
+PHI1004|Những nguyên lý cơ bản của Chủ nghĩa Mác-Lênin 1
+EMA2026|Cơ sở kỹ thuật điện
+EMA3102|Cảm biến, điều khiển vệ tinh và đồ án
+MAT1041|Giải tích 1
+JAP4025|Tiếng Nhật 3A
+ELT3104|Lập trình và ghép nối máy tính
+CTE2011|Vật liệu xây dựng
+INT3318|Các thiết bị mạng và môi trường truyền
+RBE2003|Động học và động lực học
+HIS1002|Đường lối cách mạng của Đảng Cộng sản Việt Nam
+INT3211|Tích hợp hệ thống
+EMA3004|Công nghệ CAD/CAM/CNC
+EMA3117|Cơ học vật liệu Composite
+POL1001|Tư tưởng Hồ Chí Minh
+ELT3056|Truyền thông vô tuyến
+INT2043|Cấu trúc dữ liệu và giải thuật
+EMA3101|Kết cấu thiết bị bay và đồ án
+EMA2050|Xác suất thống kê ứng dụng
+EPN2025|Kỹ thuật màng mỏng và công nghệ nano
+INT3109|Thu thập và phân tích yêu cầu
+EMA3097|Công trình biển ven bờ (đê, cảng, đường ống, bể chứa) và đồ án
+PES1020|Bóng rổ 1
+ELT3240|Nhập môn hệ thống nhúng
+PES1040|Tennis
+PES1030|Bóng bàn
+CTE2013|Cơ sở Quy hoạch
+INT3207|Kho dữ liệu
+INT3406|Xử lý ngôn ngữ tự nhiên
+EMA3116|Kỹ thuật thủy khí
+INT3206|Cơ sở dữ liệu phân tán
+JAP4021|Tiếng Nhật 1A
+CTE3004|Kết cấu thép
+EPN3010|Các vật liệu từ tính cấu trúc nanô và kỹ thuật spin điện tử
+CTE3001|Nền và móng
+PES1025|Bóng đá
+EPN2023|Các phương pháp toán lý
+INT3202|Hệ quản trị cơ sở dữ liệu
+PES1035|Cầu lông
+EPN3006|Các hệ vi cơ điện tử và ứng dụng
+EPN3052|Vật liệu gốm kỹ thuật
+INT1007|Giới thiệu về Công nghệ thông tin
+EET2016|Lựa chọn năng lượng bền vững
+INT3111|Quản lý dự án phần mềm
+PHY1104|Thực hành Vật lý đại cương
+EMA3104|Cơ học chất lỏng thực nghiệm
+INT3404|Xử lý ảnh
+INT3306|Phát triển ứng dụng Web
+MAT1099|Phương pháp tính
+EMA3085|Robot công nghiệp
+FLF2103|Tiếng Anh cơ sở 3
+EMA2041|Phương trình vi phân và đạo hàm riêng
+CTE2007|Hình họa - họa hình
+EMA2013|Lý thuyết điều khiển tự động
+ELT3094|Nhập môn Xử lý tín hiệu cho hệ thống đa phương tiện
+INT3209|Khai phá dữ liệu
+INT3131|Dự án khoa học
+EPN2014|Vật lý bán dẫn và linh kiện
+INT3307|An toàn và an ninh mạng
+INT3115|Thiết kế giao diện người dùng
+EMA2024|Kỹ thuật đo lường và cảm biến
+INT4002|Thực tập doanh nghiệp
+AER2005|Cơ học kỹ thuật cho Công nghệ Hàng không Vũ trụ
+EMA3092|Động lực học - môi trường không khí và đồ án
+EMA2004|Cơ học môi trường liên tục
+INT1050|Toán học rời rạc
+INT3308|Đánh giá hiệu năng mạng
+ELT2040|Điện tử tương tự
+INT3401|Trí tuệ nhân tạo
+INT2044|Lý thuyết thông tin
+ELT3134|Thực tập Kỹ thuật điện tử
+EMA3091|Động lực học sông và đồ án
+EET2001|Hóa học hữu cơ
+INT3501|Khoa học dịch vụ
+INT2205|Kiến trúc máy tính
+CTE2002|Cơ học lý thuyết
+CTE3002|Thủy văn
+EPN3035|Vật liệu bán dẫn cấu trúc nanô
+PHI1006|Triết học Mác - Lênin
+EMA3028|Kỹ thuật xung - số - tương tự và kỹ thuật đo và điều khiển
+EMA2033|Cơ sở thiết kế máy
+CTE3005|Trắc địa
+PES1550|Lý luận GDTC và các môn thể thao cơ bản
+ELT3045|Nhập môn hệ thống và mạch cao tần
+PHY1105|Vật lý hiện đại
+EMA3110|Kỹ thuật đường ống
+JAP4023|Tiếng Nhật 2A
+INT3117|Kiểm thử và đảm bảo chất lượng phần mềm
+ELT3071|Hệ thống nhúng thời gian thực
