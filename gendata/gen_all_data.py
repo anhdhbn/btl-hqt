@@ -57,14 +57,13 @@ if write_classes:
 if write_students:
     remove_file(path_students)
     remove_file(path_id_students)
-    idx = 0
+
     for i in range(number_row_students):
         id = str(uuid.uuid4())
         data = f"{id},{get_random_name()},{str(random1995To2001())}"
         write_append_data(path_students, data)
         write_append_data(path_id_students, id)
-        idx += 1
-        if(idx % number_log == 0):
+        if(i % number_log == 0):
             log_helper("student", i, number_row_students, number_log)
 
 ###################################
