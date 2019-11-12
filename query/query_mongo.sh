@@ -3,7 +3,7 @@
 start=$(date +%s%N)
 time_couter=0
 x=1
-number_repeat=10
+number_repeat=100
 
 
 function execute_mongo
@@ -23,4 +23,6 @@ done
 
 end=$((($(date +%s%N) - $start)/1000000))
 echo "total loop time: $end"
-echo "Avg time: $(($end/$number_repeat))"
+avg_time=$(($end/$number_repeat))
+echo "Avg time: $avg_time"
+echo "$number_repeat times, limit: $number_limit,avg time: $avg_time" >> logs.txt
