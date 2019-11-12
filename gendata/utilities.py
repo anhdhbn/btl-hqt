@@ -55,7 +55,12 @@ cached = {}
 
 def read_at_line(path, line):
     if(path in cached.keys()):
-        return cached[path].readline().strip()
+        temp = cached[path].readline().strip()
+        if(temp == ""):
+            cached[path] = codecs.open(path, 'r', encoding='utf8')
+            return cached[path].readline().strip()
+        else:
+            return temp
     else:
         cached[path] = codecs.open(path, 'r', encoding='utf8')
         return cached[path].readline().strip()
