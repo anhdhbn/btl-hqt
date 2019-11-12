@@ -1,18 +1,27 @@
 import codecs
 import uuid
 import json
+import os
 from utilities import *
 
 #####################################
 # config variable
+
+db_name = "btlhqt"
+classdb_insert =  "INSERT INTO `courses` (`idcourse`, `course_code`, `course_name`) VALUES "
+studentdb_insert= "INSERT INTO `students` (`idstudent`, `name`, `dob`) VALUES "
+registrationdb_insert = "INSERT INTO `registrations` (`idstudent`, `idcourse`) VALUES "
+
 number_row_classes = 25000000
 number_row_students = 25000000
 number_row_registrations = 50000000
+number_split_sql = 1
 
 directory = "./data/"
 path_classes = f"{directory}courses.csv"
 path_students = f"{directory}students.csv"
 path_registration  = f"{directory}registrations.csv"
+path_registration_sql  = f"{directory}registrations.sql"
 path_monggo  = f"{directory}mongo.json"
 
 path_id_classes = f"{directory}idcourses.txt"
@@ -28,7 +37,30 @@ number_log = 5000
 if not os.path.exists(directory):
     os.makedirs(directory)
 
-
+remove_file(path_registration_sql)
+write_append_data(path_registration_sql, "DROP DATABASE IF EXISTS btlhqt;")
+write_append_data(path_registration_sql, "CREATE DATABASE btlhqt;")
+write_append_data(path_registration_sql, "USE btlhqt;")
+write_append_data(path_registration_sql, 
+"""CREATE TABLE courses (
+idcourse VARCHAR(200) PRIMARY KEY,
+course_code VARCHAR(200) NOT NULL,
+course_name VARCHAR(200) NOT NULL
+);
+""")
+write_append_data(path_registration_sql, 
+"""CREATE TABLE students (
+idstudent VARCHAR(200) PRIMARY KEY,
+name VARCHAR(200) NOT NULL,
+dob DATETIME NOT NULL
+);
+""")
+write_append_data(path_registration_sql, 
+"""CREATE TABLE registrations (
+idstudent VARCHAR(200) PRIMARY KEY,
+idcourse VARCHAR(200) NOT NULL
+);
+""")
 #####################################
 # Gen data mysql for classes table from classes.txt
 #####################################
@@ -47,6 +79,13 @@ if write_classes:
             write_append_data(path_classes, data)
             write_append_data(path_id_classes, id)
             
+            if(idx % number_split_sql == 0):
+                write_append_data(path_registration_sql, classdb_insert)
+            if(idx % number_split_sql == number_split_sql - 1):
+                write_append_data(path_registration_sql, f"('{id}','{class_split[0]} {i+1}','{class_split[1]}');")
+            else:
+                write_append_data(path_registration_sql, f"('{id}','{class_split[0]} {i+1}','{class_split[1]}'),")
+
             idx += 1
             if(idx % number_log == 0):
                 log_helper("course", idx, number_row_classes, number_log)
@@ -60,9 +99,18 @@ if write_students:
 
     for i in range(number_row_students):
         id = str(uuid.uuid4())
-        data = f"{id},{get_random_name()},{str(random1995To2001())}"
+        name = get_random_name()
+        dob = str(random1995To2001())
+        data = f"{id},{name},{dob}"
         write_append_data(path_students, data)
         write_append_data(path_id_students, id)
+        if(i % number_split_sql == 0):
+            write_append_data(path_registration_sql, studentdb_insert)
+        if(i % number_split_sql == number_split_sql - 1):
+            write_append_data(path_registration_sql, f"('{id}','{name}','{dob}');")
+        else:
+            write_append_data(path_registration_sql, f"('{id}','{name}','{dob}'),")
+
         if(i % number_log == 0):
             log_helper("student", i, number_row_students, number_log)
 
@@ -73,7 +121,10 @@ if write_students:
 if write_registration:
     remove_file(path_monggo)
     remove_file(path_registration)
+    remove_file(path_registration_sql)
 
+    
+    
     write_append_data(path_monggo, "[")
     idx = 0
     for i in range(number_row_students):
@@ -94,7 +145,13 @@ if write_registration:
             infoclass =  read_at_line(path_classes, number_line_class).split(',')
             data = f"{idstudent},{idclass}"
             write_append_data(path_registration, data)
-
+            
+            if(idx % number_split_sql == 0):
+                write_append_data(path_registration_sql, registrationdb_insert)
+            if(idx % number_split_sql == number_split_sql - 1):
+                write_append_data(path_registration_sql, f"('{idstudent}','{idclass}');")
+            else:
+                write_append_data(path_registration_sql, f"('{idstudent}','{idclass}'),")
             #########################
             #  data mongo
             #########################
