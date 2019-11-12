@@ -6,16 +6,16 @@ x=1
 # number_repeat=100
 
 
-function execute_mongo
+function execute_mysql
 {
-  echo "db.btlhqt.find().limit($1)" | mongo data
+  #query
 }
 
 while [ $x -le $number_repeat ]
 do
   current=$(date +%s%N)
   echo "========================================== $x times"
-  execute_mongo $number_limit
+  execute_mysql
   time_loop=$((($(date +%s%N) - $current)/1000000))
   echo "Current loop time: $time_loop"
   x=$(( $x + 1 ))
@@ -25,4 +25,4 @@ end=$((($(date +%s%N) - $start)/1000000))
 echo "total loop time: $end"
 avg_time=$(($end/$number_repeat))
 echo "Avg time: $avg_time"
-echo "$number_repeat times, limit: $number_limit,avg time: $avg_time" >> mongo_logs.txt
+echo "$number_repeat times, limit: $number_limit,avg time: $avg_time" >> mysql_logs.txt
