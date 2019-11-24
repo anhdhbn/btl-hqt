@@ -8,14 +8,14 @@ x=1
 
 function execute_mongo
 {
-  echo "db.btlhqt.find().limit($1)" | mongo data
+  echo "db.btlhqt.find().limit($number_limit)" | mongo data
 }
 
 while [ $x -le $number_repeat ]
 do
   current=$(date +%s%N)
   echo "========================================== $x times"
-  execute_mongo $number_limit
+  execute_mongo
   time_loop=$((($(date +%s%N) - $current)/1000000))
   echo "Current loop time: $time_loop"
   x=$(( $x + 1 ))

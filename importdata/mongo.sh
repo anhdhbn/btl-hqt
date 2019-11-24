@@ -1,2 +1,2 @@
 #!/bin/bash
-mongoimport --db dbName --collection collectionName --file $filename --jsonArray
+mongoimport --db data --collection btlhqt --file $filename --jsonArray

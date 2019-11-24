@@ -15,7 +15,7 @@ registrationdb_insert = "INSERT INTO `registrations` (`idstudent`, `idcourse`) V
 number_row_classes = 25000000
 number_row_students = 25000000
 number_row_registrations = 50000000
-number_split_sql = 1
+number_split_sql = 5000
 
 directory = "./data/"
 path_classes = f"{directory}courses.csv"
@@ -43,24 +43,32 @@ write_append_data(path_registration_sql, "CREATE DATABASE btlhqt;")
 write_append_data(path_registration_sql, "USE btlhqt;")
 write_append_data(path_registration_sql, 
 """CREATE TABLE courses (
-idcourse VARCHAR(200) PRIMARY KEY,
-course_code VARCHAR(200) NOT NULL,
-course_name VARCHAR(200) NOT NULL
+idcourse VARCHAR(200) PRIMARY KEY ,
+course_code VARCHAR(200) NOT NULL ,
+course_name VARCHAR(200) NOT NULL 
 );
 """)
 write_append_data(path_registration_sql, 
 """CREATE TABLE students (
-idstudent VARCHAR(200) PRIMARY KEY,
-name VARCHAR(200) NOT NULL,
-dob DATETIME NOT NULL
-);
+idstudent VARCHAR(200) PRIMARY KEY ,
+name VARCHAR(200) NOT NULL ,
+dob DATETIME NOT NULL 
+) ;
 """)
 write_append_data(path_registration_sql, 
 """CREATE TABLE registrations (
-idstudent VARCHAR(200) PRIMARY KEY,
-idcourse VARCHAR(200) NOT NULL
-);
+idstudent VARCHAR(200) NOT NULL ,
+idcourse VARCHAR(200) NOT NULL 
+) ;
 """)
+
+
+write_append_data(path_registration_sql, 
+"""ALTER TABLE courses MODIFY course_name VARCHAR(200) CHARACTER SET utf8;
+ALTER TABLE students MODIFY name VARCHAR(200) CHARACTER SET utf8;
+
+""")
+
 #####################################
 # Gen data mysql for classes table from classes.txt
 #####################################
@@ -84,7 +92,10 @@ if write_classes:
             if(idx % number_split_sql == number_split_sql - 1):
                 write_append_data(path_registration_sql, f"('{id}','{class_split[0]} {i+1}','{class_split[1]}');")
             else:
-                write_append_data(path_registration_sql, f"('{id}','{class_split[0]} {i+1}','{class_split[1]}'),")
+                if(class_ == classes_[len(classes_) - 1] and i == (int(number_row_classes/len(classes_)))):
+                    write_append_data(path_registration_sql, f"('{id}','{class_split[0]} {i+1}','{class_split[1]}');")
+                else:
+                    write_append_data(path_registration_sql, f"('{id}','{class_split[0]} {i+1}','{class_split[1]}'),")
 
             idx += 1
             if(idx % number_log == 0):
@@ -121,7 +132,7 @@ if write_students:
 if write_registration:
     remove_file(path_monggo)
     remove_file(path_registration)
-    remove_file(path_registration_sql)
+    # remove_file(path_registration_sql)
 
     
     

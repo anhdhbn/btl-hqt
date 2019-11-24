@@ -6,9 +6,9 @@ ELT3060|Kỹ thuật cao tần
 INT3121|Các chuyên đề trong Khoa học Máy tính
 EMA3005|Công nghệ chế tạo máy
 EPN3055|Công nghệ chế tạo pin mặt trời
-EMA3096|Công trình biển ngoài khơi, độ tin cậy và đồ án
+EMA3096|Công trình biển ngoài khơi độ tin cậy và đồ án
 ELT3057|Truyền thông số và mã hóa
-INT3216|Phân tích, đánh giá hiệu năng hệ thống máy tính
+INT3216|Phân tích đánh giá hiệu năng hệ thống máy tính
 EPN2051|Seminar và thảo luận nhóm về công nghệ nano và ứng dụng
 EMA3094|Thủy động lực học - môi trường biển
 EPN3024|Thiết bị quang tử
@@ -107,7 +107,7 @@ INT3213|Nhập môn an toàn thông tin
 BSA2002|Nguyên lý marketing
 PHI1004|Những nguyên lý cơ bản của Chủ nghĩa Mác-Lênin 1
 EMA2026|Cơ sở kỹ thuật điện
-EMA3102|Cảm biến, điều khiển vệ tinh và đồ án
+EMA3102|Cảm biến điều khiển vệ tinh và đồ án
 MAT1041|Giải tích 1
 JAP4025|Tiếng Nhật 3A
 ELT3104|Lập trình và ghép nối máy tính
@@ -125,7 +125,7 @@ EMA3101|Kết cấu thiết bị bay và đồ án
 EMA2050|Xác suất thống kê ứng dụng
 EPN2025|Kỹ thuật màng mỏng và công nghệ nano
 INT3109|Thu thập và phân tích yêu cầu
-EMA3097|Công trình biển ven bờ (đê, cảng, đường ống, bể chứa) và đồ án
+EMA3097|Công trình biển ven bờ (đê cảng đường ống bể chứa) và đồ án
 PES1020|Bóng rổ 1
 ELT3240|Nhập môn hệ thống nhúng
 PES1040|Tennis
